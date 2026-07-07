@@ -3,39 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alin Beren Software Ltd</title>
+    <title>Alin Beren Software Ltd | Software Consultancy</title>
     <meta
       name="description"
-      content="Alin Beren Software Ltd - software consulting and product development."
+      content="Alin Beren Software Ltd helps teams build and modernize reliable software products."
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="container">
-      <h1>Alin Beren Software Ltd</h1>
-      <p>Software consulting and product development.</p>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <div class="brand">Alin Beren Software Ltd</div>
+        <nav>
+          <a href="#services">Services</a>
+          <a href="#approach">Approach</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <main class="container">
-      <section>
-        <h2>What we do</h2>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">UK Software Consultancy</p>
+          <h1>Practical software delivery for growing teams</h1>
+          <p class="lead">
+            We help businesses launch, improve, and scale web products with
+            clear engineering practices and modern cloud architecture.
+          </p>
+          <a class="button" href="#contact">Start a conversation</a>
+        </div>
+      </section>
+
+      <section class="container section" id="services">
+        <h2>Services</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Web Application Development</h3>
+            <p>
+              Build and ship maintainable web platforms with strong foundations
+              in performance, reliability, and security.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Cloud Migration</h3>
+            <p>
+              Move workloads to cloud infrastructure with a staged approach that
+              lowers risk and keeps business continuity.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Technical Advisory</h3>
+            <p>
+              Support product and engineering decisions with architecture
+              reviews, delivery planning, and hands-on implementation guidance.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="container section" id="approach">
+        <h2>How we work</h2>
         <p>
-          We help teams design, build, and ship reliable software products with
-          a focus on web platforms and cloud delivery.
+          We focus on measurable outcomes, transparent communication, and
+          incremental delivery so every iteration brings visible value.
         </p>
       </section>
 
-      <section>
+      <section class="container section" id="contact">
         <h2>Contact</h2>
-        <p>Email: hello@example.com</p>
+        <p>
+          Email: <a href="mailto:hello@example.com">hello@example.com</a>
+          <span class="hint">(update with your preferred contact email)</span>
+        </p>
+        <p>
+          Registered office: 15 Richmond Gardens, Canterbury, England, CT2 8ES
+        </p>
       </section>
     </main>
 
-    <footer class="container">
-      <p>
-        Alin Beren Software Ltd • Company No. 13621361 • Registered in England
-        and Wales
-      </p>
+    <footer class="site-footer">
+      <div class="container">
+        <p>Alin Beren Software Ltd • Company No. 13621361</p>
+        <p>Registered in England and Wales</p>
+      </div>
     </footer>
   </body>
 </html>
