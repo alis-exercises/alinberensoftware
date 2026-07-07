@@ -116,6 +116,39 @@ h1 {
   gap: 1rem;
 }
 
+.slider {
+  overflow: hidden;
+  border-radius: 0.8rem;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 18s infinite;
+}
+
+.slide {
+  width: 100%;
+  padding: 2rem;
+  min-height: 180px;
+  color: #fff;
+  background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+}
+
+.slide:nth-child(2) {
+  background: linear-gradient(135deg, #115e59, #0f766e);
+}
+
+.slide:nth-child(3) {
+  background: linear-gradient(135deg, #7c2d12, #c2410c);
+}
+
+.slide h3 {
+  margin-top: 0;
+}
+
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
@@ -145,6 +178,24 @@ h1 {
 
 .site-footer p {
   margin: 0.1rem 0;
+}
+
+@keyframes slide {
+  0%,
+  28% {
+    transform: translateX(0);
+  }
+  33%,
+  61% {
+    transform: translateX(-33.3333%);
+  }
+  66%,
+  94% {
+    transform: translateX(-66.6666%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @media (max-width: 700px) {
