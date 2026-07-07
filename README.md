@@ -1,6 +1,6 @@
 # alinberensoftware
 
-Minimal static website starter for Alin Beren Software Ltd.
+Minimal static website starter for ALINBEREN SOFTWARE SOLUTIONS AND IT CONSULTANCY LTD.
 
 ## Local preview
 
