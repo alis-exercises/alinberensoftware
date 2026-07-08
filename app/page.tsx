@@ -293,17 +293,31 @@ export default function Home() {
               Share your goals and we&apos;ll propose a practical roadmap across AI
               strategy, architecture, and product delivery.
             </p>
-            <form className="grid gap-4 md:grid-cols-2">
+            <form
+              action="https://formsubmit.co/alisaglam@gmail.com"
+              method="POST"
+              className="grid gap-4 md:grid-cols-2"
+            >
+              <input type="hidden" name="_subject" value="New website inquiry" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://alinberensoftwaresolutionsanditconsultancy.co.uk/#contact"
+              />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="text" name="_honey" className="hidden" tabIndex={-1} />
               <input
                 type="text"
                 name="name"
                 placeholder="Your name"
+                required
                 className="rounded-xl border border-white/15 bg-white/[0.06] px-4 py-3 text-white placeholder:text-slate-400 focus:border-blue-400 focus:outline-none"
               />
               <input
                 type="email"
                 name="email"
                 placeholder="Work email"
+                required
                 className="rounded-xl border border-white/15 bg-white/[0.06] px-4 py-3 text-white placeholder:text-slate-400 focus:border-blue-400 focus:outline-none"
               />
               <input
@@ -322,6 +336,7 @@ export default function Home() {
                 name="message"
                 placeholder="Tell us what you need to build..."
                 rows={5}
+                required
                 className="md:col-span-2 rounded-xl border border-white/15 bg-white/[0.06] px-4 py-3 text-white placeholder:text-slate-400 focus:border-blue-400 focus:outline-none"
               />
               <div className="md:col-span-2 flex flex-wrap items-center gap-3">
